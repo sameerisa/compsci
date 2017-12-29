@@ -11,7 +11,7 @@ public class MyClass {
 		
 				
 		Student[] s	= new Student[20];
-		int size= laste(s)-1;
+		int size = 0;
 		boolean running = true;
 		Scanner read = new Scanner(System.in);
 	
@@ -35,6 +35,7 @@ public class MyClass {
 				else 
 				{
 					s[index]=s1;
+					
 				}
 				
 				
@@ -50,12 +51,14 @@ public class MyClass {
 				else
 					s[(index-1)]=null;
 			}
+			size = laste(s)-1;
 			if(temp.equals("quit")) 
 			{
 				running = false;
 			}
 		
 		}
+		printArray(s,size);
 	}
 	
 	private static int laste(Student[] s) 
@@ -76,8 +79,38 @@ public class MyClass {
 		return index;
 		}
 	}
-	private static boolean addElement() {}
-	private static boolean deleteElement() {}
-	private static printArray() {}
+	private static boolean addElement(Student s1, Student[] s, int size) {
+		if(laste(s)!=-1){
+		if(s1.getName()==s[size].getName()) {
+			return true;
+		}
+		else 
+		{
+			return false;
+		}
+		}
+		else 
+		{
+			return false;
+		}
+		
+	}
+	private static boolean deleteElement(Student s1, Student[] s, int size) {
+		if(s[size+1]==null) {
+			return true;
+		}
+		else 
+		{
+			false;
+		}
+	}
+	private static void printArray(Student[] s, int size) {
+		for(Student i:s) 
+		{
+			System.out.print(i+" ");
+			
+		}
+		System.out.println();
+	}
 
 }
