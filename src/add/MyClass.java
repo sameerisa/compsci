@@ -173,7 +173,7 @@ public class MyClass {
 		}
 		printArrayAvg(s,size);
 	
-		if(s[size]==null) {
+		if(s[index-1]==null) {
 			return true;
 		}
 		else 
