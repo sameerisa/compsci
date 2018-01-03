@@ -129,8 +129,8 @@ public class MyClass {
 		}
 		
 		
-		if(laste(s)!=-1){
-		if(s1.getName()==s[size].getName()) {
+		if(laste(s)!=19){
+		if(s1.getName()==s[index].getName()) {
 			return true;
 		}
 		else 
