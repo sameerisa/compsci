@@ -89,7 +89,7 @@ public class MyClass {
 	
 	private static int laste(Student[] s) 
 	{
-		int index=0;
+		int index=-1;
 		for(int i = 0; i < s.length; i++) {
 			if(s[i]==null) 
 			{
@@ -98,10 +98,11 @@ public class MyClass {
 			}
 			
 		}
-		if(index==19) 
+		if(index==-1) 
 		{
-			return -1;
+			return 19;
 		}
+		
 		else {
 		return index;
 		}
@@ -111,7 +112,7 @@ public class MyClass {
 		
 		int index = laste(s);
 		
-		if(index == -1) 
+		if(index == 19) 
 		{
 			System.out.println("The array is full");
 			
@@ -121,13 +122,13 @@ public class MyClass {
 		{
 			s[index]=s1;
 			
+			
+			size = laste(s)-1;
+			printArrayAvg(s,size);
+			
 		}
 		
-		if(index==-1) 
-			size=19;
-		else
-			size = laste(s)-1;
-		printArrayAvg(s,size);
+		
 		if(laste(s)!=-1){
 		if(s1.getName()==s[size].getName()) {
 			return true;
@@ -147,7 +148,7 @@ public class MyClass {
 		int index = laste(s);
 		if(index!=0) {
 			
-		if(index==-1) 
+		if(index==19) 
 		{
 			s[19]=null;
 			
@@ -173,6 +174,7 @@ public class MyClass {
 		}
 		printArrayAvg(s,size);
 	
+		if(index!=0) {
 		if(s[index-1]==null) {
 			return true;
 		}
@@ -180,6 +182,9 @@ public class MyClass {
 		{
 			return false;
 		}
+		}
+		else 
+			return false;
 		
 		
 	}
