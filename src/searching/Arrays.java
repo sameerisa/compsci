@@ -40,11 +40,9 @@ public class Arrays {
 			}
 			System.out.println();
 		}
-		int sum = 0;
-		for(int i=0; i<square[0].length; i++) 
-		{
-			sum+=i;
-		}
+		int sum = sumRow(square, 1);
+		System.out.println(sum);
+		
 		Boolean test = false;
 		while(true) 
 		{
@@ -72,20 +70,23 @@ public class Arrays {
 			
 			int sum1=0;
 			int num=0;
-			for(int i=0; i<square.length; i++) 
+			for(int i=0; i<4; i++) 
 			{
 				sum+=square[i][num];
 				num++;
+				
 			}
+			System.out.println(sum1);
 			if(sum!=sum1)
 				break;
 			num=3;
 			sum1=0;
-			for(int i=square.length-1; i>=0; i--) 
+			for(int i=0; i<4; i++) 
 			{
-				sum1+=square[i][num];
+				sum1+=square[num][i];
 				num--;
 			}
+			System.out.println(sum1);
 			if(sum!=sum1)
 				break;
 			
@@ -95,6 +96,7 @@ public class Arrays {
 			
 			
 			test=true;
+			
 			break;
 		}
 		if(test) 
@@ -112,20 +114,22 @@ public class Arrays {
 	public static int sumCol(int[][] a, int index) 
 	{
 		int sum=0;
-		for(int i = 0; i<a.length; i++) 
+		for(int i = 0; i<4; i++) 
 		{
 			sum+=a[i][index];
 		}
+		System.out.println(sum);
 		return sum;
 		
 	}
 	public static int sumRow(int[][] a, int index) 
 	{
 		int sum=0;
-		for(int i = 0; i<a[index].length; i++) 
+		for(int i = 0; i<4; i++) 
 		{
 			sum+=a[index][i];
 		}
+		System.out.println(sum);
 		return sum;
 		
 	}
