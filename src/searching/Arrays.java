@@ -41,7 +41,7 @@ public class Arrays {
 			System.out.println();
 		}
 		int sum = sumRow(square, 1);
-		System.out.println(sum);
+		//System.out.println(sum);
 		
 		Boolean test = false;
 		while(true) 
@@ -72,21 +72,21 @@ public class Arrays {
 			int num=0;
 			for(int i=0; i<4; i++) 
 			{
-				sum+=square[i][num];
+				sum1+=square[i][num];
 				num++;
 				
 			}
-			System.out.println(sum1);
+			//System.out.println(sum1);
 			if(sum!=sum1)
 				break;
-			num=3;
+			num=0;
 			sum1=0;
-			for(int i=0; i<4; i++) 
+			for(int i=3; i>=0; i--) 
 			{
-				sum1+=square[num][i];
-				num--;
+				sum1+=square[i][num];
+				num++;
 			}
-			System.out.println(sum1);
+			//System.out.println(sum1);
 			if(sum!=sum1)
 				break;
 			
@@ -118,7 +118,7 @@ public class Arrays {
 		{
 			sum+=a[i][index];
 		}
-		System.out.println(sum);
+		//System.out.println(sum);
 		return sum;
 		
 	}
@@ -129,7 +129,7 @@ public class Arrays {
 		{
 			sum+=a[index][i];
 		}
-		System.out.println(sum);
+		//System.out.println(sum);
 		return sum;
 		
 	}
