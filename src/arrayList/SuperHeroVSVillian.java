@@ -50,14 +50,25 @@ public class SuperHeroVSVillian {
 			while(vil.get(v).gethealth()!=0 && hero.get(h).gethealth() !=0)
 			{
 				psc(vil.get(v)+" attacks "+hero.get(h));
+				fight(hero.get(h), vil.get(v));
+				
 				
 			}
-		
+			if(vil.get(v).gethealth()==0) 
+			{
+				psc(vil.get(v).getalias()+" has been defeated");
+			}
+			if(hero.get(h).gethealth()==0)
+				psc(hero.get(h).getalias()+" has been defeated");
 		
 		
 		
 		
 		}
+		if(hero.isEmpty())
+			psc("The hero's have been defeated");
+		if(vil.isEmpty()) 
+			psc("The villain's have been defeated");
 		
 	}
 	
