@@ -2,5 +2,8 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/samee/Downloads/TurtleGraphics-20180201T152201Z-001/TurtleGraphics/TurtleGraphics.jar" sourcepath="C:/Users/samee/Downloads/TurtleGraphics-20180201T152201Z-001"/>
+	<classpathentry kind="lib" path="C:/Users/samee/Downloads/BreezySwingAndTerminalIO-20180201T152707Z-001/BreezySwingAndTerminalIO/BreezySwing.jar" sourcepath="C:/Users/samee/Downloads/BreezySwingAndTerminalIO-20180201T152707Z-001/BreezySwingAndTerminalIO/BreezySwing"/>
+	<classpathentry kind="lib" path="C:/Users/samee/Downloads/BreezySwingAndTerminalIO-20180201T152707Z-001/BreezySwingAndTerminalIO/TerminalIO.jar" sourcepath="C:/Users/samee/Downloads/BreezySwingAndTerminalIO-20180201T152707Z-001/BreezySwingAndTerminalIO"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

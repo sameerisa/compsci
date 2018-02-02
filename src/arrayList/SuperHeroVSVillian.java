@@ -31,14 +31,14 @@ public class SuperHeroVSVillian {
 		
 		while(true)
 		{
-			p("Enter your villains alias, evil power and then the amount of health");
+			p("Enter your villains alias, evil power and then the amount of health or enter quit to continue");
 			ans = read.nextLine();
 			if(ans.equals("quit"))
 				break;
 			vil.add(new Villain(ans,read.nextLine(),read.nextInt()));
 			
 		}
-		Villain villain = new Villain(read.nextLine(),read.nextLine(),read.nextInt());
+		read.nextLine();
 		System.out.println(hero);
 		System.out.println(vil);
 		while(hero.isEmpty() && vil.isEmpty());
