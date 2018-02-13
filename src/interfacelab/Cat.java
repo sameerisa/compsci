@@ -5,13 +5,13 @@ public class Cat implements Animal{
 	@Override
 	public String getPlace() {
 		// TODO Auto-generated method stub
-		return " Cat House ";
+		return "Cat House";
 	}
 
 	@Override
 	public String getNoise() {
 		// TODO Auto-generated method stub
-		return " Meow ";
+		return "Meow";
 	}
 
 	@Override
